@@ -1,5 +1,4 @@
 ﻿using System.Data.Entity;
-using UniStore.Repository.DAL;
 
 namespace Repository.DAL
 {
