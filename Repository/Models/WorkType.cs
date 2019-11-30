@@ -8,9 +8,9 @@ namespace Repository.Models
     {
         public CleanMethod CleanMethod { get; set; }
 
-        public DateTime RegTimeStart { get; set; }
+        public DateTime? RegTimeStart { get; set; }
 
-        public DateTime RegTimeEnd { get; set; }
+        public DateTime? RegTimeEnd { get; set; }
 
         public Season SeasonCode { get; set; }
 

@@ -22,6 +22,8 @@ namespace Repository.DAL
 
 		public DbSet<OdhNode> OdhNodes { get; set; }
 
+		public DbSet<OdhType> OdhTypes { get; set; }
+
 		public DbSet<OdhCategory> OdhsCategories { get; set; }
 
 		public DbSet<Gbu> Gbus { get; set; }
