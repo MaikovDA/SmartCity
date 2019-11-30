@@ -1,0 +1,15 @@
+{
+  "weather": {
+    "temperature": "number", // температура
+    "precipitation": { 
+      "precipitation_type": "string", // тип осадки
+      "precipitation_speed": "number" // скорость
+    }
+  },
+  "_": {
+    "transport": "string", // траспорт
+    "driver": "string" // исполнитель
+  },
+  "coordinates": "string", // кординаты маршрута
+  "deadline_time": "number", // время исполнения
+}

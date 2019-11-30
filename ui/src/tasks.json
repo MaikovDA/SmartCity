@@ -1,0 +1,31 @@
+{
+  "tasks": [
+    {
+      "id": "string",
+      "name": "string",
+      "status": "string",
+      "alerts": [
+        {
+          "type": "string",
+          "text": "string"
+        }
+      ],
+      "subtasks": [
+        {
+          "id": "string",
+          "name": "string",
+          "status": "string",
+          "work_type": "string",
+          "material": "string",
+          "attachment": "string",
+          "start_time": "string",
+          "deadline_time": "string",
+          "coordinates": "string[]",
+          "route_name": "string[]",
+          "transport": "string",
+          "driver": "string"
+        }
+      ]
+    }
+  ]
+}
