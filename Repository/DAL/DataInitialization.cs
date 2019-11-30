@@ -1,4 +1,6 @@
 ﻿using System.Data.Entity;
+using System.Linq;
+using Repository.Models;
 
 namespace Repository.DAL
 {
@@ -6,7 +8,10 @@ namespace Repository.DAL
 	{
 		protected override void Seed(DataContext context)
 		{
+			context.CleanMethods.Add(new CleanMethod() {Name = "Ручной"});
+			context.CleanMethods.Add(new CleanMethod() { Name = "Механизированный" });
 
+			context.SaveChanges();
 		}
 	}
 }

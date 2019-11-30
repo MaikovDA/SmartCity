@@ -9,7 +9,6 @@ namespace TeamB.Tests.DataBase
 	[TestClass]
 	public class DataInitializationTest
 	{
-		
 		[TestInitialize]
 		public void TestInitialize()
 		{

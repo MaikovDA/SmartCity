@@ -11,6 +11,8 @@ namespace Repository.Models
 
         public int GazolineVol { get; set; }
 
+		public ICollection<WorkType> WorkTypes { get; set; }
+
         public ICollection<Attachment> Attachments { get; set; }
     }
 }

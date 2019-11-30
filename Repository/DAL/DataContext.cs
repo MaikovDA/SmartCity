@@ -1,6 +1,8 @@
 ﻿using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
 using Repository.Models;
+using Repository.Models.Odh;
+using Repository.Models.Route;
 
 namespace Repository.DAL
 {
@@ -12,9 +14,29 @@ namespace Repository.DAL
 
         public DbSet<CleanMethod> CleanMethods { get; set; }
 
-        public DbSet<WorkType> WorkTypes { get; set; }
+        public DbSet<Node> Nodes { get; set; }
 
-        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+		public DbSet<Route> Routes { get; set; }
+
+		public DbSet<Odh> Odhs { get; set; }
+
+		public DbSet<OdhNode> OdhNodes { get; set; }
+
+		public DbSet<OdhCategory> OdhsCategories { get; set; }
+
+		public DbSet<Gbu> Gbus { get; set; }
+
+		public DbSet<WorkTask> WorkTasks { get; set; }
+
+		public DbSet<SubTask> SubTasks { get; set; }
+
+		public DbSet<Employee> Employees { get; set; }
+
+		public DbSet<Material> Materials { get; set; }
+
+		public DbSet<Edge> Edges { get; set; }
+
+		protected override void OnModelCreating(DbModelBuilder modelBuilder)
 		{
 			modelBuilder.Conventions.Remove<PluralizingEntitySetNameConvention>();
 		}
