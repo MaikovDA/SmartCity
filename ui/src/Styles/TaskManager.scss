@@ -1,0 +1,56 @@
+.task-list{
+  height: 100%;
+  background: #F7F7F7;
+  margin: 30px;
+  margin-bottom: 0;
+  flex-grow: 1;
+  overflow: auto;
+
+  .header{
+    font-size: 25px;
+  }
+
+  img{
+    pointer-events: none;
+  }
+}
+
+.popup_layout{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0, 0.5,);
+  z-index: 1;
+
+  .popup_wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    width: 50%;
+    height: 50%;
+    border-radius: 20px;
+    background: #fff;
+
+    .body{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate3d(-50%, -50%, 0);
+      font-size: 26px;
+    }
+  
+    .popup_close{
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      right: 30px;
+      top: 30px;
+      background: #eee;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

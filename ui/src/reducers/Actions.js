@@ -9,6 +9,14 @@ export default class Actions {
 		this.dispatch({ type: 'SET_STATE', payload: state });
 	}
 
+	setRouteState(state) {
+		this.dispatch({ type: 'SET_ROUTE', payload: state });
+	}
+
+	setActiveTab(tab) {
+		this.dispatch({ type: 'SET_TAB', payload: tab });
+	}
+
 	getWeather() {
 		fetch('https://api.weather.yandex.ru/v1/forecast?lat=55.75396&lon=37.620393&extra=true', {
 			headers: {
@@ -22,7 +30,8 @@ export default class Actions {
 				this.dispatch({ type: 'GET_WEATHER', payload: weatherJSON });
 			})
 			.catch((rej) => {
-				console.warn(rej);
+				console.warn(rej + ' https://yandex.ru/dev/weather/doc/dg/concepts/errors-docpage/');
+				alert('API Яндекс.Погоды не доступен https://yandex.ru/dev/weather/doc/dg/concepts/errors-docpage/ ' + rej);
 			});
 	}
 

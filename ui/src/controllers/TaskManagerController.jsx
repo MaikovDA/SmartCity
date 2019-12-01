@@ -1,6 +1,6 @@
-import * as React from 'react';
+import React from 'react';
 
-import TaskManager from '../Components/TaskManager';
+import TaskManager from '../Components/TaskManager/TaskManager';
 
 /**
  * ======================
