@@ -115,6 +115,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\SmartCity.mdf" />
+    <Content Include="App_Data\SmartCity_log.ldf">
+      <DependentUpon>SmartCity.mdf</DependentUpon>
+    </Content>
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
