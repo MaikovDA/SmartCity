@@ -3,6 +3,8 @@
 ################################################################################
 
 /.vs/TeamB/v14
+/**/bin/**
+/**/obj/**
 /Repository/bin/Debug
 /Repository/obj/Debug
 /TeamB/bin
