@@ -1,0 +1,54 @@
+.left-menu-panel{
+  width: 100px;
+  height: 100%;
+  background: #3E64FF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .user-avatar{
+    margin-top: 27px;
+    border-radius: 50%;
+    width: 54px;
+    min-height: 54px;
+    border: #B2FCFF;
+  }
+
+  .menu-items-wrapper{
+    margin-top: 50px;
+
+    .item{
+      position: relative;
+      width: 48px;
+      height: 48px;
+      border-radius: 8px;
+      margin-top: 40px;
+      cursor: pointer;
+      transition: .2s;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .item-header{
+        position: absolute;
+        bottom: -14px;
+        left: 50%;
+        transform: translate3d(-50%, 0, 0);
+        color: #5EDFFF;
+      }
+
+      svg{
+        margin: 0 auto;
+        pointer-events: none;
+      }
+      
+      &.active, &:hover{
+        background: rgba(178,252,255, 0.8);
+
+        path{
+          fill: #3E64FF;
+        }
+      }
+    }
+  }
+}

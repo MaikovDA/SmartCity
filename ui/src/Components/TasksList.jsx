@@ -1,12 +1,14 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import '../Styles/TasksList.scss';
 import { connect } from 'react-redux';
 import Actions from '../reducers/Actions';
+import Map from './Map';
+import Task from './TaskManager/Task'
 
-const Task = (props) => {
+const SubTask = (props) => {
   const { active, dataId } = props;
   return (
-    <div className={`task-item ${active ? 'active' : ''}`} data-id={dataId}>
+    <div className={`sub-task-item ${active ? 'active' : ''}`} data-id={dataId}>
     </div>
   )
 }
@@ -15,7 +17,7 @@ class TasksList extends Component {
   constructor() {
     super();
     this.state = {
-      activeTask: null
+      activeSubTask: null
     }
   }
 
@@ -25,26 +27,18 @@ class TasksList extends Component {
     actions.getWeather();
   }
 
-  handleClick = (e) => {
-
-    const taskId = e.target.dataset.id;
-    const { activeTask } = this.state;
-
-    if (taskId !== undefined) {
-      this.setState({
-        activeTask: taskId === activeTask ? null : taskId
-      })
-    }
-  }
-
   render() {
-    const { activeTask } = this.state;
-    const { weatherState, tasks } = this.props;
+    const { tasks } = this.props;
 
     return (
-      <div className="task-list-container" onClick={this.handleClick}>
-        {tasks.map(task => <Task key={task.id} dataId={task.id} active={task.id === activeTask} />)}
-      </div>
+      <Fragment>
+        <div className="monitor-wrapper">
+          <div className="task-list-container">
+            {tasks.map(task => <Task key={task.id} task={task} />)}
+          </div>
+          <Map />
+        </div>
+      </Fragment>
     );
   }
 }
