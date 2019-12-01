@@ -115,10 +115,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\SmartCity.mdf" />
-    <Content Include="App_Data\SmartCity_log.ldf">
-      <DependentUpon>SmartCity.mdf</DependentUpon>
-    </Content>
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -140,8 +136,14 @@
     </Content>
     <Content Include="App_Data\ODH_TYPE.csv" />
     <Content Include="App_Data\ODH_CATEGORY.csv" />
-    <Content Include="App_Data\BD - ATTACHMENT.csv" />
-    <Content Include="App_Data\BD - MACHINE_TYPE.csv" />
+    <Content Include="App_Data\ATTACHMENT.csv" />
+    <Content Include="App_Data\MACHINE.csv" />
+    <Content Include="App_Data\MACHINE_TYPE.csv" />
+    <Content Include="App_Data\ODH.csv" />
+    <Content Include="App_Data\WORK_TYPE.csv" />
+    <Content Include="App_Data\WEATHER_CONDITION.csv" />
+    <Content Include="App_Data\CHECK_TYPE.csv" />
+    <Content Include="App_Data\MACHINE_TYPE_ATTACHMENT.csv" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

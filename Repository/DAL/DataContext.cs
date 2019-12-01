@@ -40,6 +40,12 @@ namespace Repository.DAL
 
 		public DbSet<Edge> Edges { get; set; }
 
+		public DbSet<WeatherCondition> WeatherConditions { get; set; }
+
+		public DbSet<WorkType> WorkTypes { get; set; }
+
+		public DbSet<CheckType> CheckTypes { get; set; }
+
 		protected override void OnModelCreating(DbModelBuilder modelBuilder)
 		{
 			modelBuilder.Conventions.Remove<PluralizingEntitySetNameConvention>();

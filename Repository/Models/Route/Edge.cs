@@ -1,4 +1,5 @@
-﻿using Repository.Models.Base;
+﻿using System.ComponentModel.DataAnnotations;
+using Repository.Models.Base;
 
 namespace Repository.Models.Route
 {
@@ -8,6 +9,7 @@ namespace Repository.Models.Route
 
 		public Node EndNode { get; set; }
 
+		[Required]
 		public Route Route { get; set; }
 	}
 }
