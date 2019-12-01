@@ -1,7 +1,8 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import '../Styles/TasksList.scss';
 import { connect } from 'react-redux';
 import Actions from '../reducers/Actions';
+import Map from './Map';
 
 const Task = (props) => {
   const { active, dataId } = props;
@@ -42,9 +43,12 @@ class TasksList extends Component {
     const { weatherState, tasks } = this.props;
 
     return (
-      <div className="task-list-container" onClick={this.handleClick}>
-        {tasks.map(task => <Task key={task.id} dataId={task.id} active={task.id === activeTask} />)}
-      </div>
+      <Fragment>
+        <div className="task-list-container" onClick={this.handleClick}>
+          {tasks.map(task => <Task key={task.id} dataId={task.id} active={task.id === activeTask} />)}
+        </div>
+        <Map />
+      </Fragment>
     );
   }
 }

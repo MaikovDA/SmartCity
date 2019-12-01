@@ -1,14 +1,10 @@
-import React, { Component, Fragment } from 'react';
-import TasksList from './TasksList'
-import Map from './Map'
+import React, { Component } from 'react';
+import Routes from '../routes';
 
 export default class App extends Component {
     render() {
         return (
-            <Fragment>
-                <TasksList/>
-                <Map/>
-            </Fragment>
+            <Routes {...this.props} />
         );
     }
 }
