@@ -10,7 +10,9 @@ namespace Repository.DAL
 	{
         public DbSet<Machine> Machines { get; set; }
 
-        public DbSet<Attachment> Attachments { get; set; }
+		public DbSet<MachineType> MachineTypes { get; set; }
+
+		public DbSet<Attachment> Attachments { get; set; }
 
         public DbSet<CleanMethod> CleanMethods { get; set; }
 

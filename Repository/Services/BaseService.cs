@@ -5,11 +5,11 @@ namespace Repository.Services
 {
     public abstract class BaseService : IDisposable
     {
-        protected readonly DataContext UsContext = new DataContext();
+        protected readonly DataContext DbContext = new DataContext();
 
         public void Dispose()
         {
-            UsContext.Dispose();
+            DbContext.Dispose();
         }
     }
 }

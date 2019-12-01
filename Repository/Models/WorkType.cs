@@ -16,7 +16,7 @@ namespace Repository.Models
 
 	    public int DayOperationCount { get; set; }
 
-		public ICollection<Machine> Machines { get; set; } 
+		public ICollection<MachineType> Machines { get; set; } 
 
 		public ICollection<Attachment> Attachments { get; set; } 
     }
