@@ -1,0 +1,37 @@
+.weather-widget{
+  position: relative;
+  width: 284px;
+  height: 100%;
+  background: #F7F7F7;
+  margin-right: 30px;
+  box-shadow: 0px 0px 10px rgba(62, 100, 255, 0.15);
+
+  .widget_icon{
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    width: 132px;
+    transform: translate3d(-50%, 0, 0);
+  }
+
+  .widget_hour{
+    float: right;
+    font-size: 14px;
+  }
+
+  .widget_temp{
+    float: left;
+    font-size: 35px;
+  }
+
+  &:before{
+    content: '';
+    position: absolute;
+    top: 186px;
+    height: 2px;
+    width: 80%;
+    left: 50%;
+    transform: translate3d(-50%, 0, 0);
+    background: #E0E0E0;
+  }
+}

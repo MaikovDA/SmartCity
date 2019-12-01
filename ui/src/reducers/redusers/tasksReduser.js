@@ -3,7 +3,8 @@ const initialState = {
     {
       "id": "gg_t_221tg",
       "name": "Задача 1",
-      "status": "В очереди",
+      "status_name": "В очереди",
+      "status_type": "error",
       "alerts": [
         {
           "type": "error",
@@ -34,7 +35,8 @@ const initialState = {
     {
       "id": "gg_t_221tgdf",
       "name": "Задача 2",
-      "status": "В работе",
+      "status_name": "В работе",
+      "status_type": "in-progress",
       "alerts": [],
       "subtasks": [
         {
